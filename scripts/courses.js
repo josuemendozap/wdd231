@@ -85,7 +85,7 @@ function updateTotalCredits(courseList) {
     document.getElementById("total-credits").innerHTML = `<strong>Total Credits:</strong> ${total}`;
 }
 
-// Render courses dynamically
+
 function displayCourses(courseList) {
     courseContainer.innerHTML = "";
 
@@ -102,10 +102,10 @@ function displayCourses(courseList) {
     });
 }
 
-// Initial display (All courses)
+
 displayCourses(courses);
 
-// Button filters using array.filter()
+
 document.getElementById("all").addEventListener("click", () => {
     displayCourses(courses);
 });
