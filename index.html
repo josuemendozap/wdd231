@@ -3,10 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page | Josue Amulek Mendoza Perez</title>
+    <meta name="description" content="This page has the intention to demonstrate the skills to develop a good website using HTML, CSS and Javascript knowledge">
+    <meta name="author" content="Josue Amulek Mendoza Perez">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-    <h1>Mendoza, Josue | WDD 231</h1>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span>Josue Amulek Mendoza Perez</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello everyone! My name is Josue Mendoza and I am very excited for this new course. I want to introduce a bit of myself. I am from Mexico City, I am 21 years old almost 22 because my birthday is on January 20th. I am member of the Church of Jesus Christ of Latter Day Saints; I served in the Mexico, Torreon Mission and, 1 year ago I returned from it. I want to learn about programming because I think it is a good career and, it's a good way to find jobs that can let me spend time with my family and serving others. I like playing Ukulele, making songs, in general I like music.</p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpeg" alt="My photo">
+        </section>
+        <section id="certificate">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="wdd">WDD</button>
+                <button id="cse">CSE</button>
+            </div>
+            <div id="course-cards"></div>
+            <p id="total-credits"><strong>Total Credits:</strong> 0</p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/josue.amulek.mendoza.perez" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://x.com/MushashitoJosu" target="_blank"><img src="images/twitter-x.svg" alt="twitter x" width="16" height="16"></a>
+            <a href="https://github.com/josuemendozap" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/josue-amulek-mendoza-perez-857505385/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        </div>
+        <p><span id="currentyear"></span> | Josue Amulek Mendoza Perez | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
