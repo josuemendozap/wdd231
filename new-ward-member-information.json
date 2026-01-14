@@ -1,0 +1,23 @@
+{
+    "family_name" : "Mendoza",
+    "date_of_moving" : "01-13-2026",
+    "number_of_members" : 3,
+    "visited_by_bishopric" : true,
+    "member_data" : [
+        {
+            "name" : "Juan Mendoza",
+            "gender" : "Masculine",
+            "birthdate" : "10-24-1970"
+        },
+        {
+            "name" : "Mary Christensen",
+            "gender" : "Femenine",
+            "birthdate" : "05-13-1972"
+        },
+        {
+            "name" : "Daisy Mendoza",
+            "gender" : "Femenine",
+            "birthdate" : "01-20-2004"
+        }
+    ] 
+}
