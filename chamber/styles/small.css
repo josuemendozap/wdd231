@@ -140,6 +140,9 @@ header span {
 .grid img {
     border: 1px solid #fff;
     box-shadow: 0 0 1rem #555;
+    display: block;
+    max-width: 200px;
+    margin-inline: auto;
 }
 
 /* ---------- LIST VIEW ---------- */
