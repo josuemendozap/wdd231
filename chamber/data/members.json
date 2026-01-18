@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "MiroSav",
+            "address": "Av. Heroico Colegio Militar 101, Nueva Vizcaya",
+            "phone": "+52 618 150 2030",
+            "website": "https://www.MiroSav.org",
+            "image": "mirosav.webp",
+            "membershipLevel": 3,
+            "founded": 2018
+        },
+        {
+            "name": "Sierra Verde Organics",
+            "address": "456 Avenida Verde, Victoria de Durango, Dgo, Mexico",
+            "phone": "+52 618 234 5678",
+            "website": "https://www.sierraverde.mx",
+            "image": "sierra-verde.webp",
+            "membershipLevel": 2,
+            "founded": 2012
+        },
+        {
+            "name": "Durango Construction Group",
+            "address": "789 Boulevard Industrial, Victoria de Durango, Dgo, Mexico",
+            "phone": "+52 618 345 6789",
+            "website": "https://www.durangoconstruction.com",
+            "image": "durango-construction.webp",
+            "membershipLevel": 1,
+            "founded": 2015
+        },
+        {
+            "name": "El Mezquite Restaurant",
+            "address": "321 Calle Hidalgo, Victoria de Durango, Dgo, Mexico",
+            "phone": "+52 618 456 7890",
+            "website": "https://www.elmezquite.com",
+            "image": "el-mezquite.webp",
+            "membershipLevel": 2,
+            "founded": 2004
+        },
+        {
+            "name": "Norteña Logistics",
+            "address": "654 Carretera Panamericana, Victoria de Durango, Dgo, Mexico",
+            "phone": "+52 618 567 8901",
+            "website": "https://www.nortenalogistics.mx",
+            "image": "nortena-logistics.webp",
+            "membershipLevel": 3,
+            "founded": 2000
+        },
+        {
+            "name": "Durango Fitness Center",
+            "address": "987 Avenida del Deporte, Victoria de Durango, Dgo, Mexico",
+            "phone": "+52 618 678 9012",
+            "website": "https://www.durangofitness.com",
+            "image": "durango-fitness.webp",
+            "membershipLevel": 1,
+            "founded": 2020
+        },
+        {
+            "name": "Sol del Norte Travel Agency",
+            "address": "159 Plaza Principal, Victoria de Durango, Dgo, Mexico",
+            "phone": "+52 618 789 0123",
+            "website": "https://www.soldelnorte.travel",
+            "image": "sol-del-norte.webp",
+            "membershipLevel": 3,
+            "founded": 2002
+        }
+    ]
+}

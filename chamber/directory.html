@@ -13,8 +13,65 @@
     <meta property="og:description" content="This page is intended to help people find a central listing of member businesses, in order to learn abaout, and connect with them.">
     <meta property="og:image" content="https://github.com/josuemendozap/wdd231/blob/main/chamber/images/directory-chamber.jpg?raw=true">
     <meta property="og:url" content="https://josuemendozap.github.io/wdd231/chamber/directory.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
 </head>
 <body>
-    
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="512" height="512">
+        <span>Victoria de Durango Chamber of Commerce</span>
+        <img src="images/changer.svg" alt="mode changer icon" id="mode-changer" class="changer">
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-bar"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href="#">Chamber Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="hero" src="images/directory-chamber-800.webp" srcset="
+            images/directory-chamber-400.webp 400w,
+            images/directory-chamber-800.webp 800w,
+            images/directory-chamber-1200.webp 1200w
+          " sizes="(max-width: 600px) 90vw, 515px" alt="Chamber Directory" loading="eager" fetchpriority="high" width="515"
+            height="289">
+        <h1>Chamber Directory</h1>
+        <button id="list-on" class="cards">View as a list</button>
+        <button id="cards-on" class="cards">View as cards</button>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <div class="information">
+            <strong>Victoria de Durango Chamber of Commerce</strong>
+            <p>Av. 20 de Noviembre 313, Zona Centro</p>
+            <p>34000 Durango, Dgo.</p>
+            <p>info@durangocc.org</p>
+            <p>(+52) 618 835 1004</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/josue.amulek.mendoza.perez" target="_blank"><img src="images/facebook.svg"
+                    alt="facebook" width="16" height="16"></a>
+            <a href="https://x.com/MushashitoJosu" target="_blank"><img src="images/twitter-x.svg" alt="twitter x" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/josue-amulek-mendoza-perez-857505385/" target="_blank"><img
+                    src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        </div>
+        <div class="personal">
+            <p>WDD231 Class Project</p>
+            <p>Josue Amulek Mendoza Perez</p>
+            <p><span id="currentyear"></span> Victoria de Durango Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>
