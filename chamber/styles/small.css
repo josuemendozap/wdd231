@@ -120,6 +120,7 @@ header span {
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #call-to-action:hover {
@@ -189,6 +190,8 @@ header span {
 
 .spotlight-card a {
     grid-column: 2/3;
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 /* ---------- GRID VIEW ---------- */
@@ -220,11 +223,6 @@ header span {
     gap: 0.5rem;
     overflow: hidden;
     align-self: start;
-}
-
-.spotlight-card a {
-    word-break: break-word;
-    overflow-wrap: anywhere;
 }
 
 .grid section {
