@@ -1,0 +1,16 @@
+main {
+    border: 1px solid #5d6f67;
+    background-color: #ffe37f;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#current-temp {
+    font-weight: bold;
+}
+
+figcaption {
+    font-family: sans-serif;
+
+}
+
