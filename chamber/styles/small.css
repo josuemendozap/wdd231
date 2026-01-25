@@ -12,6 +12,11 @@
     --border-color: #ddd;
 }
 
+body {
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 1.5;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -197,6 +202,7 @@ header span {
 
 #spotlights {
     margin-top: 20px;
+    min-height: clamp(300px, 40vw, 600px);
 }
 
 .spotlight-card {

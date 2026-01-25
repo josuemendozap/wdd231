@@ -36,7 +36,12 @@ function displaySpotlights(members) {
 
         card.innerHTML = `
       <h3>${member.name}</h3>
-      <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
+      <img
+        src="images/${member.image}" 
+        alt="${member.name} logo"
+        loading="lazy"
+        width="300"
+        height="200">
       <div class="information-comp">
         <p><strong>Phone:</strong> ${member.phone}</p>
         <p><strong>Address:</strong> ${member.address}</p>
