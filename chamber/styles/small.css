@@ -90,8 +90,35 @@ header span {
 }
 
 /* ---------- MAIN ---------- */
-.hero {
+.direc {
     width: 100%;
+}
+.hero {
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#call-to-action {
+    position: absolute;
+    bottom: 3rem;
+    right: 1.25rem;
+
+    padding: 0.75rem 1.5rem;
+    background-color: #2818bc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#call-to-action:hover {
+    background-color: #1f1490;
 }
 
 .cards {
@@ -104,6 +131,26 @@ header span {
     cursor: pointer;
     color: var(--primary-color);
     background-color: var(--accent-color);
+}
+
+h2 {
+    background-color: var(--accent-light);
+    padding: .5rem 0;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.events, .weather, .forecast {
+    background-color: var(--accent-color);
+}
+
+#forecast {
+    list-style: none;
+    margin: 0 10px;
+}
+
+#forecast li {
+    margin-bottom: 10px;
 }
 
 /* ---------- GRID VIEW ---------- */
@@ -143,6 +190,45 @@ header span {
     display: block;
     max-width: 200px;
     margin-inline: auto;
+}
+
+.first-row {
+    display: grid;
+    grid-template-columns: auto 25% 25%;
+    grid-gap: .8rem;
+    margin: 0 10px;
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* imagen | texto */
+    grid-template-areas:
+        "title title"
+        "icon temp"
+        "icon desc";
+    column-gap: 0.5rem;
+    align-items: center;
+}
+
+.weather h2 {
+    grid-area: title;
+}
+
+#weather-icon {
+    grid-area: icon;
+    width: 60px;
+    height: auto;
+}
+
+#current-temp {
+    grid-area: temp;
+    font-weight: bold;
+}
+
+#description {
+    grid-area: desc;
+    margin: 0;
 }
 
 /* ---------- LIST VIEW ---------- */
