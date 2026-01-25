@@ -202,7 +202,8 @@ header span {
 
 #spotlights {
     margin-top: 20px;
-    min-height: clamp(300px, 40vw, 600px);
+    min-height: 300px;
+    align-items: start;
 }
 
 .spotlight-card {
@@ -217,7 +218,8 @@ header span {
     grid-template-columns: minmax(120px, 40%) 1fr;
     grid-template-rows: auto;
     gap: 0.5rem;
-    overflow: hidden
+    overflow: hidden;
+    align-self: start;
 }
 
 .spotlight-card a {
