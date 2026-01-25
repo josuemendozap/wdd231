@@ -37,10 +37,12 @@ function displaySpotlights(members) {
         card.innerHTML = `
       <h3>${member.name}</h3>
       <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
-      <p><strong>Phone:</strong> ${member.phone}</p>
-      <p><strong>Address:</strong> ${member.address}</p>
-      <p><strong>Membership:</strong> ${getMembershipName(member.membershipLevel)}</p>
-      <a href="${member.website}" target="_blank" rel="noopener">${member.website}</a>
+      <div class="information-comp">
+        <p><strong>Phone:</strong> ${member.phone}</p>
+        <p><strong>Address:</strong> ${member.address}</p>
+        <p><strong>Membership:</strong> ${getMembershipName(member.membershipLevel)}</p>
+        <a href="${member.website}" target="_blank" rel="noopener">${member.website}</a>
+      </div>
     `;
         container.appendChild(card);
     });
