@@ -96,6 +96,10 @@ function displayCourses(courseList) {
 
         card.innerHTML = `<h3>${course.subject} ${course.number} ${course.completed ? "✔ Completed" : "⏳ Not Completed"}</h3>`;
 
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        })
+
         courseContainer.appendChild(card);
 
         updateTotalCredits(courseList);
@@ -119,3 +123,31 @@ document.getElementById("cse").addEventListener("click", () => {
     const cseCourses = courses.filter(course => course.subject === "CSE");
     displayCourses(cseCourses);
 });
+
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+    <button id="close-modal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technology:</strong> ${course.technology.join(", ")}</p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#close-modal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+    courseDetails.addEventListener("click", (event) => {
+        if (event.target === courseDetails) {
+            courseDetails.close();
+        }
+    });
+}

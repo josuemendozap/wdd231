@@ -142,11 +142,20 @@ section p {
     border-radius: 10px;
     border: 2px solid #ddd;
     background-color: #E07A5F;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    background-color: #5ee669;
 }
 
 .course-card.completed {
     border: 2px solid #5ee669;
     background-color: #cfcfcf;
+}
+
+.course-card.completed:hover {
+    background-color: #5ee669;
 }
 
 .course-card h3 {
@@ -158,6 +167,30 @@ section p {
     margin-top: 0.5rem;
     font-weight: bold;
     font-size: 0.85rem;
+}
+
+dialog {
+    border: 1px solid (#3D405B / 10%);
+    border-radius: .4rem;
+    padding: 16px;
+    background-color: #cfcfcf;
+    box-shadow: 0 0 48px #777;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+::backdrop {
+    background-color: (#E07A5F / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    border: 1px solid (#3D405B / 10%);
+    cursor: pointer;
 }
 
 /* Footer */
