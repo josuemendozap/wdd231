@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Josue Mendoza</title>
+
+    <meta name="description" content="Thank you for submitting your membership application form.">
+    <meta name="author" content="Josue Amulek Mendoza Perez">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Thank You | Josue Mendoza">
+    <meta property="og:description" content="Thank you for submitting your membership application form.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="512" height="512">
+        <span>Victoria de Durango Chamber of Commerce</span>
+        <img src="images/changer.svg" alt="mode changer icon" id="mode-changer" class="changer">
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="nav-bar"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Chamber Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thankyou">
+            <h1>Thank You!</h1>
+            <p>Your membership application has been successfully submitted.</p>
+        
+            <div class="form-summary">
+                <h2>Application Summary</h2>
+        
+                <p><strong>First Name:</strong> <span id="display-firstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="display-lastName"></span></p>
+                <p><strong>Email:</strong> <span id="display-email"></span></p>
+                <p><strong>Mobile Number:</strong> <span id="display-phoneNumber"></span></p>
+                <p><strong>Business Name:</strong> <span id="display-businessName"></span></p>
+                <p><strong>Date Submitted:</strong> <span id="display-timestamp"></span></p>
+            </div>
+        
+            <div class="thankyou-actions">
+                <a class="thankyou-btn" href="index.html">Return Home</a>
+                <a class="thankyou-btn secondary" href="directory.html">Explore the Directory</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="information">
+            <strong>Victoria de Durango Chamber of Commerce</strong>
+            <p>Av. 20 de Noviembre 313, Zona Centro</p>
+            <p>34000 Durango, Dgo.</p>
+            <p>info@durangocc.org</p>
+            <p>(+52) 618 835 1004</p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/josue.amulek.mendoza.perez" target="_blank">
+                <img src="images/facebook.svg" alt="facebook" width="16" height="16">
+            </a>
+            <a href="https://x.com/MushashitoJosu" target="_blank">
+                <img src="images/twitter-x.svg" alt="twitter x" width="16" height="16">
+            </a>
+            <a href="https://www.linkedin.com/in/josue-amulek-mendoza-perez-857505385/" target="_blank">
+                <img src="images/linkedin.svg" alt="linkedin" width="16" height="16">
+            </a>
+        </div>
+
+        <div class="personal">
+            <p>WDD231 Class Project</p>
+            <p>Josue Amulek Mendoza Perez</p>
+            <p><span id="currentyear"></span> Victoria de Durango Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

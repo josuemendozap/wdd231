@@ -66,4 +66,35 @@
         grid-template-rows: auto;
         gap: 0.5rem;
     }
+
+    .join-layout {
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: 1.5rem;
+        align-items: start;
+    }
+    .membership-section {
+        position: sticky;
+        top: 1rem;
+    }
+
+    .thankyou {
+        max-width: 650px;
+        margin: 2rem auto;
+    }
+    
+    .thankyou-actions {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .thankyou-btn {
+        width: auto;
+    }
+        
+    .form-summary {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
