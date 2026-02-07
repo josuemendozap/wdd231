@@ -55,38 +55,40 @@
         <div class="join-layout">
             <form action="thankyou.html" method="get">
                 <h2>Membership Application Form</h2>
-
-                <label for="firstName">First Name: 
-                    <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+            
+                <label for="firstName">First Name:
+                    <input type="text" id="firstName" name="firstName" title="Enter your first name" autocomplete="given-name"
+                        required>
                 </label>
-
-                <label for="lastName">Last Name: 
-                    <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+            
+                <label for="lastName">Last Name:
+                    <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name"
+                        required>
                 </label>
-
-                <label for="orgTitle">Organizational Title: 
-                    <input type="text" name="organizationalTitle"
-                    title="Enter your organizational title (minimum 7 characters)" autocomplete="organization-title"
-                    pattern="[A-Za-z\- ]{7,}" required>
+            
+                <label for="orgTitle">Organizational Title:
+                    <input type="text" id="orgTitle" name="organizationalTitle"
+                        title="Enter your organizational title (minimum 7 characters)" autocomplete="organization-title"
+                        pattern="[A-Za-z\- ]{7,}" required>
                 </label>
-
-                <label for="email">Email Address: 
-                    <input type="email" name="email" title="Enter your email address" autocomplete="email"
-                    placeholder="example@domain.com" required>
+            
+                <label for="email">Email Address:
+                    <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
+                        placeholder="example@domain.com" required>
                 </label>
-
-                <label for="phoneNumber">Mobile Phone Number: 
-                    <input type="tel" name="phoneNumber" title="Enter your mobile phone number" autocomplete="tel"
-                    required>
+            
+                <label for="phoneNumber">Mobile Phone Number:
+                    <input type="tel" id="phoneNumber" name="phoneNumber" title="Enter your mobile phone number" autocomplete="tel"
+                        required>
                 </label>
-
-                <label for="businessName">Business / Organization's Name: 
-                    <input type="text" name="businessName" title="Enter your business/organization's name"
-                    autocomplete="organization" required>
+            
+                <label for="businessName">Business / Organization's Name:
+                    <input type="text" id="businessName" name="businessName" title="Enter your business/organization's name"
+                        autocomplete="organization" required>
                 </label>
-
-                <label for="membership">Membership Level: 
-                    <select name="membership" title="Select a membership level" required>
+            
+                <label for="membership">Membership Level:
+                    <select id="membership" name="membership" title="Select a membership level" required>
                         <option value="" disabled selected>Select a membership level</option>
                         <option value="np">NP Membership (Non Profit - No Fee)</option>
                         <option value="bronze">Bronze Membership</option>
@@ -94,13 +96,13 @@
                         <option value="gold">Gold Membership</option>
                     </select>
                 </label>
-
-                <label for="orgDescription">Business / Organization's description: 
-                    <textarea name="orgDescription" title="Describe your business or organization"></textarea>
+            
+                <label for="orgDescription">Business / Organization's description:
+                    <textarea id="orgDescription" name="orgDescription" title="Describe your business or organization"></textarea>
                 </label>
-
+            
                 <input type="hidden" id="timestamp" name="timestamp">
-
+            
                 <input type="submit" value="Join Chamber of Commerce">
             </form>
             
