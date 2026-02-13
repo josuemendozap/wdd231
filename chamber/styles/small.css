@@ -470,6 +470,97 @@ dialog .close-modal:hover {
     min-width: 140px;
 }
 
+.discover {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas:
+        "hero"
+        "visit"
+        "info"
+        "grid";
+}
+
+.discover-hero {
+    grid-area: hero;
+    margin-left: 10px;
+}
+
+.visit-message {
+    grid-area: visit;
+    background: #f2f2f2;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 10px;
+}
+
+.visit-message button {
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.discover-info {
+    grid-area: info;
+    background: #fafafa;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.discover-grid {
+    grid-area: grid;
+    margin-left: 10px;
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+
+.discover-card {
+    background: white;
+    border: 1px solid var(--accent-color);
+    border-radius: 12px;
+    padding: 1rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.discover-card address {
+    font-style: normal;
+    opacity: 0.9;
+    color: var(--primary-color);
+}
+
+.discover-card button {
+    padding: 0.6rem 0.8rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--accent-color);
+}
+
+.discover-card button:hover {
+    background-color: #ddd;
+}
+
 /* ---------- GRID VIEW ---------- */
 .grid, #spotlights {
     display: grid;

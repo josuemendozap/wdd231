@@ -1,4 +1,4 @@
-@media (min-width: 608px) {
+@media (min-width: 641px) {
 
     header,
     main,
@@ -96,5 +96,41 @@
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .discover {
+        grid-template-areas:
+        "hero hero"
+        "visit info"
+        "grid grid";
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .discover-card img {
+        transition: transform 0.25s ease, filter 0.25s ease;
+    }
+    
+    .discover-card img:hover {
+        transform: scale(1.03);
+        filter: brightness(1.05) contrast(1.05);
+    }
+}
+
+@media (min-width: 1025px) {
+    .discover {
+        grid-template-areas:
+            "hero hero hero"
+            "visit info info"
+            "grid grid grid";
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .discover-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

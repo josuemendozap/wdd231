@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victoria de Durango Chamber of Commerce</title>
-    <meta name="description" content="This page is intendeed to provide helpful information to every user who visit our chamber of commerce web site">
+    <title>Discover Page | Josue Mendoza</title>
+    <meta name="description"
+        content="Provide factual and representative information about my area.">
     <meta name="author" content="Josue Amulek Mendoza Perez">
 
     <meta property="og:title" content="Victoria de Durango Chamber of Commerce">
-    <meta property="og:description" content="This page is intendeed to provide helpful information to every user who visit our chamber of commerce web site">
+    <meta property="og:description"
+        content="Provide factual and representative information about my area.">
     <meta property="og:image" content="https://josuemendozap.github.io/wdd231/chamber/images/welcome-800.webp">
-    <meta property="og:url" content="https://josuemendozap.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://josuemendozap.github.io/wdd231/chamber/discover.html">
 
     <link rel="icon" href="favicon.ico">
 
@@ -20,15 +23,15 @@
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
-    
+    <script type="module" src="scripts/discover.js"></script>
+    <script type="module" src="scripts/discover.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
         <img src="images/logo.svg" alt="Site Logo" width="512" height="512">
@@ -38,40 +41,38 @@
             aria-controls="nav-bar"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="current"><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Chamber Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li class="current"><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img class="hero" src="images/welcome-800.webp" srcset="
-                        images/welcome-400.webp 400w,
-                        images/welcome-800.webp 800w,
-                        images/welcome-1200.webp 1200w
-                    " sizes="(max-width: 600px) 90vw, 515px" alt="Chamber Directory" loading="eager" fetchpriority="high"
-                width="515" height="289">
-            <a href="join.html" id="call-to-action">Join the Chamber of Comomerce</a>
-        </div>
-        <h1>Home</h1>
-        <div class="first-row">
-            <section class="events">
-                <h2>Events</h2>
-            </section>
-            <section class="weather">
-                <h2>Current Weather</h2>
-                <img id="weather-icon" src="" alt="" width="80" height="80">
-                <span id="current-temp"></span>
-                <p id="description"></p>
-            </section>
-            <section class="forecast">
-                <h2>Weather Forecast</h2>
-                <ul id="forecast"></ul>
-            </section>
-        </div>
-        <div id="spotlights"></div>
+        <section class="discover-hero">
+            <h1>Discover Our Area</h1>
+            <p>Explore attractions, local highlights, and community features.</p>
+        </section>
+
+        <section class="visit-message" id="visitMessage" aria-live="polite">
+            <p id="visitText"></p>
+            <button type="button" id="closeVisitMessage" aria-label="Close message">✕</button>
+        </section>
+
+        <section class="discover-info">
+            <h2>Community Snapshot</h2>
+            <ul>
+                <li><strong>Population:</strong> Approximately 616,000 residents</li>
+                <li><strong>Median Age:</strong> About 25.8 years</li>
+                <li><strong>Main Industries:</strong> Tourism (about 17.5 % of local GDP), commerce, services, and cultural
+                    heritage activities</li>
+                <li><strong>Climate:</strong> Semi-arid and temperate — warm days with mild to cool nights due to higher
+                    elevation (about 1,880 m)</li>
+            </ul>
+        </section>
+
+        <section class="discover-grid" id="discoverGrid"></section>
+
     </main>
     <footer>
         <div class="information">
@@ -82,7 +83,8 @@
             <p>(+52) 618 835 1004</p>
         </div>
         <div class="social">
-            <a href="https://www.facebook.com/josue.amulek.mendoza.perez" target="_blank"><img src="images/facebook.svg" alt="facebook" width="35" height="35"> </a>
+            <a href="https://www.facebook.com/josue.amulek.mendoza.perez" target="_blank"><img src="images/facebook.svg"
+                    alt="facebook" width="35" height="35"> </a>
             <a href="https://x.com/MushashitoJosu" target="_blank"><img src="images/twitter-x.svg" alt="twitter x"
                     width="16" height="16"></a>
             <a href="https://www.linkedin.com/in/josue-amulek-mendoza-perez-857505385/" target="_blank"><img
@@ -96,4 +98,5 @@
         </div>
     </footer>
 </body>
+
 </html>
