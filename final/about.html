@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Familia Sazón | About & Contact</title>
+    <meta name="description" content="Learn about Familia Sazón, a family food business in CDMX. Contact us to place an order or ask about delivery zones.">
+    <meta name="author" content="Josué Amulek Mendoza Pérez">
+
+    <meta property="og:title" content="Familia Sazón | About & Contact">
+    <meta property="og:description" content="Meet Familia Sazón and contact us for orders and delivery in CDMX.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.svg">
+    <meta property="og:url" content="about.html">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/logo.svg" alt="Familia Sazón logo" width="40" height="40" />
+                <span>Familia Sazón</span>
+            </a>
+
+            <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false"
+                aria-controls="primaryNav">
+                ☰
+            </button>
+
+            <nav id="primaryNav" class="nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a class="active" href="about.html">About / Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="section">
+        <div class="container">
+            <h1>About Familia Sazón</h1>
+            <p>
+                Familia Sazón is a small family food business in Mexico City (CDMX).
+                We started cooking for friends and neighbors, and now we offer our menu online.
+            </p>
+
+            <div class="cards">
+                <article class="card">
+                    <h2>Our mission</h2>
+                    <p class="small">
+                        Offer delicious traditional food with honest prices, fast ordering, and friendly service.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>Delivery</h2>
+                    <p class="small">
+                        We deliver in CDMX zones: Centro, Norte, Sur, Oriente, and Poniente.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>Hours</h2>
+                    <p class="small">
+                        Friday and Saturday: 10:00 AM – 6:00 PM<br>
+                        Weekdays: pre-orders only
+                    </p>
+                </article>
+            </div>
+
+            <section class="section alt">
+                <h2>Contact</h2>
+                <p class="small">
+                    This is a student project, so the contact info below is an example.
+                </p>
+
+                <ul class="contact-list">
+                    <li><strong>Phone:</strong> +52 55 1406 1306</li>
+                    <li><strong>Email:</strong> familiasazon@example.com</li>
+                    <li><strong>Location:</strong> CDMX, Mexico</li>
+                </ul>
+
+                <a class="btn" href="products.html">Go to Products</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2 class="footer-title">Familia Sazón</h2>
+                <p class="small">Family food business in CDMX.</p>
+            </div>
+
+            <div>
+                <h2 class="footer-title">Links</h2>
+                <a href="index.html">Home</a><br />
+                <a href="products.html">Products</a><br />
+                <a href="about.html">About / Contact</a>
+            </div>
+
+            <div>
+                <h2 class="footer-title">Attributions</h2>
+                <p class="small">
+                    Product data was created for this student project.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="small footer-bottom">
+                &copy; <span id="year"></span> Familia Sazón | WDD231 Final Project
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Familia Sazón | Home</title>
+    <meta name="description" content="Familia Sazón is a family food business in CDMX. Order cochinita pibil, tacos, chorizo, and combos made with traditional flavor.">
+    <meta name="author" content="Josué Amulek Mendoza Pérez">
+
+    <meta property="og:title" content="Familia Sazón | Home">
+    <meta property="og:description" content="Family food business in CDMX. Cochinita pibil, tacos, chorizo, and combos.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.svg">
+    <meta property="og:url" content="index.html">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/logo.svg" alt="Familia Sazón logo" width="40" height="40" />
+                <span>Familia Sazón</span>
+            </a>
+
+            <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false"
+                aria-controls="primaryNav">
+                ☰
+            </button>
+
+            <nav id="primaryNav" class="nav" aria-label="Primary navigation">
+                <a class="active" href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About / Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Traditional flavor, made by family.</h1>
+                    <p>
+                        We are <strong>Familia Sazón</strong>, a small family business in CDMX.
+                        We prepare cochinita pibil, tacos, and combos ready to enjoy.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn" href="products.html">View Products</a>
+                        <a class="btn btn-dark" href="about.html">Contact</a>
+                    </div>
+
+                    <p class="small">
+                        📍 CDMX delivery zones • Fresh food • Order online
+                    </p>
+                </div>
+
+                <div class="hero-card">
+                    <h2>Popular prices</h2>
+                    <ul class="price-list">
+                        <li><span>½ kg Cochinita Pibil</span> <strong>$150</strong></li>
+                        <li><span>4 Tacos Cochinita</span> <strong>$100</strong></li>
+                        <li><span>4 Tacos Pollo Pibil</span> <strong>$90</strong></li>
+                        <li><span>Chorizo</span> <strong>$30</strong></li>
+                    </ul>
+                    <p class="small">
+                        Check the Products page for combos, extras, and drinks.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Why people love Familia Sazón</h2>
+
+                <div class="cards">
+                    <article class="card">
+                        <h3>Authentic seasoning</h3>
+                        <p class="small">
+                            Traditional pibil flavor with family recipes and fresh ingredients.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Perfect for sharing</h3>
+                        <p class="small">
+                            Great options for lunch, family meals, and small gatherings.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Fast ordering</h3>
+                        <p class="small">
+                            Choose items, add to cart, and submit the form in minutes.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt">
+            <div class="container">
+                <h2>Reviews</h2>
+
+                <div class="cards">
+                    <article class="card">
+                        <p>“The cochinita tastes like home. Amazing!”</p>
+                        <p class="small"><strong>— Ana</strong></p>
+                    </article>
+
+                    <article class="card">
+                        <p>“The combo is perfect for quick lunch. Great price.”</p>
+                        <p class="small"><strong>— Daniel</strong></p>
+                    </article>
+
+                    <article class="card">
+                        <p>“Spicy salsa is REAL spicy 🔥. Loved it.”</p>
+                        <p class="small"><strong>— Sofía</strong></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2 class="footer-title">Familia Sazón</h2>
+                <p class="small">Family food business in CDMX.</p>
+            </div>
+
+            <div>
+                <h2 class="footer-title">Links</h2>
+                <a href="index.html">Home</a><br />
+                <a href="products.html">Products</a><br />
+                <a href="about.html">About / Contact</a>
+            </div>
+
+            <div>
+                <h2 class="footer-title">Attributions</h2>
+                <p class="small">
+                    Product data was created for this student project.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="small footer-bottom">
+                &copy; <span id="year"></span> Familia Sazón | WDD231 Final Project
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

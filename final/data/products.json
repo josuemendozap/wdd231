@@ -1,0 +1,137 @@
+[
+    {
+        "id": "coch-0500",
+        "name": "½ kg Cochinita Pibil",
+        "category": "Cochinita",
+        "price": 150,
+        "description": "Half kilo of cochinita pibil with traditional seasoning.",
+        "nutrition": "Approx. 520 kcal per serving, high protein.",
+        "recipe": "Serve with tortillas, pickled onions, and habanero salsa."
+    },
+    {
+        "id": "taco-coch-04",
+        "name": "Tacos de Cochinita (4)",
+        "category": "Tacos",
+        "price": 100,
+        "description": "Four tacos filled with cochinita pibil.",
+        "nutrition": "Approx. 480 kcal total, moderate fat.",
+        "recipe": "Add onion, cilantro, and a squeeze of lime."
+    },
+    {
+        "id": "taco-pollo-04",
+        "name": "Tacos de Pollo a la Pibil (4)",
+        "category": "Tacos",
+        "price": 90,
+        "description": "Four tacos filled with chicken pibil.",
+        "nutrition": "Approx. 420 kcal total, lean protein.",
+        "recipe": "Serve with salsa verde or pickled onions."
+    },
+    {
+        "id": "chorizo-01",
+        "name": "Chorizo (1 piece)",
+        "category": "Extras",
+        "price": 30,
+        "description": "Traditional chorizo, perfect for tacos or breakfast.",
+        "nutrition": "Approx. 220 kcal, high flavor.",
+        "recipe": "Cook with eggs or add to tacos with potatoes."
+    },
+    {
+        "id": "coch-0250",
+        "name": "¼ kg Cochinita Pibil",
+        "category": "Cochinita",
+        "price": 80,
+        "description": "Quarter kilo of cochinita pibil, great for 1–2 people.",
+        "nutrition": "Approx. 260 kcal per serving.",
+        "recipe": "Make quick tostadas with beans and cochinita."
+    },
+    {
+        "id": "coch-1000",
+        "name": "1 kg Cochinita Pibil",
+        "category": "Cochinita",
+        "price": 290,
+        "description": "One kilo of cochinita pibil for family sharing.",
+        "nutrition": "Approx. 1000+ kcal total, high protein.",
+        "recipe": "Make a family taco night with different salsas."
+    },
+    {
+        "id": "taco-coch-06",
+        "name": "Tacos de Cochinita (6)",
+        "category": "Tacos",
+        "price": 140,
+        "description": "Six tacos filled with cochinita pibil.",
+        "nutrition": "Approx. 720 kcal total.",
+        "recipe": "Serve with onions and habanero salsa."
+    },
+    {
+        "id": "taco-pollo-06",
+        "name": "Tacos de Pollo a la Pibil (6)",
+        "category": "Tacos",
+        "price": 130,
+        "description": "Six tacos filled with chicken pibil.",
+        "nutrition": "Approx. 640 kcal total.",
+        "recipe": "Add avocado slices and fresh salsa."
+    },
+    {
+        "id": "combo-01",
+        "name": "Combo: ½ kg Cochinita + 12 Tortillas",
+        "category": "Combos",
+        "price": 170,
+        "description": "Perfect combo for tacos at home.",
+        "nutrition": "Approx. 650 kcal total depending on tortillas.",
+        "recipe": "Warm tortillas and serve with pickled onions."
+    },
+    {
+        "id": "combo-02",
+        "name": "Combo: 4 Tacos Cochinita + Soda",
+        "category": "Combos",
+        "price": 120,
+        "description": "Quick lunch combo.",
+        "nutrition": "Approx. 600 kcal total.",
+        "recipe": "Best served with lime and salsa."
+    },
+    {
+        "id": "combo-03",
+        "name": "Combo: 4 Tacos Pollo + Soda",
+        "category": "Combos",
+        "price": 110,
+        "description": "Chicken pibil taco combo.",
+        "nutrition": "Approx. 560 kcal total.",
+        "recipe": "Try with onion and a spicy sauce."
+    },
+    {
+        "id": "extra-tortillas",
+        "name": "Extra Tortillas (12)",
+        "category": "Extras",
+        "price": 20,
+        "description": "Fresh tortillas to complete your order.",
+        "nutrition": "Approx. 300 kcal total.",
+        "recipe": "Heat on a pan for best flavor."
+    },
+    {
+        "id": "extra-cebolla",
+        "name": "Pickled Onion (small)",
+        "category": "Extras",
+        "price": 15,
+        "description": "Pickled onion, the classic cochinita topping.",
+        "nutrition": "Approx. 40 kcal.",
+        "recipe": "Use on tacos, tostadas, or sandwiches."
+    },
+    {
+        "id": "extra-salsa",
+        "name": "Habanero Salsa (small)",
+        "category": "Extras",
+        "price": 15,
+        "description": "Spicy habanero salsa (very hot).",
+        "nutrition": "Approx. 25 kcal.",
+        "recipe": "Add just a little for intense flavor."
+    },
+    {
+        "id": "bebida-agua",
+        "name": "Agua Fresca (500ml)",
+        "category": "Drinks",
+        "price": 25,
+        "description": "Refreshing agua fresca (seasonal flavor).",
+        "nutrition": "Approx. 120 kcal.",
+        "recipe": "Best served cold with tacos."
+    }
+]

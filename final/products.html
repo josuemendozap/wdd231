@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Familia Sazón | Products</title>
+    <meta name="description" content="Browse Familia Sazón products: cochinita pibil, tacos, chorizo, extras, drinks, and combos. Save favorites and submit an order online.">
+    <meta name="author" content="Josué Amulek Mendoza Pérez">
+
+    <meta property="og:title" content="Familia Sazón | Products">
+    <meta property="og:description" content="Explore cochinita pibil, tacos, extras, drinks, and combos. Save favorites and order online.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.svg">
+    <meta property="og:url" content="products.html">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/products.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/logo.svg" alt="Familia Sazón logo" width="40" height="40" />
+                <span>Familia Sazón</span>
+            </a>
+
+            <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false"
+                aria-controls="primaryNav">
+                ☰
+            </button>
+
+            <nav id="primaryNav" class="nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a class="active" href="products.html">Products</a>
+                <a href="about.html">About / Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="section">
+        <div class="container">
+            <h1>Products</h1>
+            <p>
+                Browse our menu. Click on any product to see details, nutrition, and recipe ideas.
+                You can save favorites and add items to your cart.
+            </p>
+
+            <div class="toolbar">
+                <label class="tool">
+                    Search:
+                    <input id="searchInput" type="search" placeholder="cochinita, tacos, combo..." />
+                </label>
+
+                <label class="tool">
+                    Category:
+                    <select id="categorySelect">
+                        <option value="all">All</option>
+                    </select>
+                </label>
+
+                <label class="tool">
+                    Favorites:
+                    <select id="favoritesSelect">
+                        <option value="all">All</option>
+                        <option value="favorites">Favorites only</option>
+                    </select>
+                </label>
+
+                <button id="clearCartBtn" class="btn btn-dark" type="button">
+                    Clear Cart
+                </button>
+            </div>
+
+            <p class="small">
+                Favorites saved: <strong><span id="favCount">0</span></strong> |
+                Cart items: <strong><span id="cartCount">0</span></strong>
+            </p>
+
+            <p id="statusText" class="small" aria-live="polite"></p>
+
+            <div id="productGrid" class="product-grid" aria-live="polite"></div>
+
+            <section class="order-section">
+                <h2>Order Form</h2>
+                <p class="small">
+                    Your cart will automatically fill into the order notes.
+                </p>
+
+                <form id="orderForm" class="order-form" method="get" action="thankyou.html">
+                    <label for="fname">First Name*:</label>
+                    <input type="text" name="fname" id="fname" required autocomplete="given-name" />
+
+                    <label for="lname">Last Name*:</label>
+                    <input type="text" name="lname" id="lname" required autocomplete="family-name" />
+
+                    <label for="email">Email*:</label>
+                    <input type="email" name="email" id="email" required autocomplete="email" />
+
+                    <label for="mobile">Mobile Number*:</label>
+                    <input type="tel" name="mobile" id="mobile" required autocomplete="tel" />
+
+                    <label for="zone">Delivery Zone (CDMX)*:</label>
+                    <select name="zone" id="zone" required>
+                        <option value="">Select one...</option>
+                        <option value="centro">Centro</option>
+                        <option value="norte">Norte</option>
+                        <option value="sur">Sur</option>
+                        <option value="oriente">Oriente</option>
+                        <option value="poniente">Poniente</option>
+                    </select>
+
+                    <label for="notes">Order Notes*:</label>
+                    <textarea name="notes" id="notes" required rows="5"
+                        placeholder="Example: 1 taco cochinita + 1 chorizo"></textarea>
+
+                    <input type="hidden" name="cart" id="cartField" />
+
+                    <button class="btn" type="submit">Submit Order</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <dialog id="productModal" class="modal" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button id="closeModalBtn" class="modal-close" type="button" aria-label="Close dialog">✕</button>
+
+            <h2 id="modalTitle">Product</h2>
+            <p id="modalDesc"></p>
+
+            <div class="modal-details">
+                <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+                <p><strong>Category:</strong> <span id="modalCategory"></span></p>
+                <p><strong>Nutrition:</strong> <span id="modalNutrition"></span></p>
+            </div>
+
+            <h3>Recipe Idea</h3>
+            <p id="modalRecipe"></p>
+
+            <div class="modal-actions">
+                <button id="modalFavBtn" class="btn btn-dark" type="button">Save Favorite</button>
+                <button id="modalCartBtn" class="btn" type="button">Add to Cart</button>
+            </div>
+        </div>
+    </dialog>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2 class="footer-title">Familia Sazón</h2>
+                <p class="small">Family food business in CDMX.</p>
+            </div>
+
+            <div>
+                <h2 class="footer-title">Links</h2>
+                <a href="index.html">Home</a><br />
+                <a href="about.html">About / Contact</a>
+            </div>
+
+            <div>
+                <h2 class="footer-title">Attributions</h2>
+                <p class="small">
+                    Product data was created for this student project.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="small footer-bottom">
+                &copy; <span id="year"></span> Familia Sazón | WDD231 Final Project
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

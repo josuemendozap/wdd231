@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Familia Sazón | Thank You</title>
+    <meta name="description" content="Thank you for your order with Familia Sazón. Review your order details and delivery zone in CDMX.">
+    <meta name="author" content="Josué Amulek Mendoza Pérez">
+
+    <meta property="og:title" content="Familia Sazón | Thank You">
+    <meta property="og:description" content="Your order request was received. Review your submitted details.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.svg">
+    <meta property="og:url" content="thankyou.html">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/thankyou.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="images/logo.svg" alt="Familia Sazón logo" width="40" height="40" />
+                <span>Familia Sazón</span>
+            </a>
+
+            <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-expanded="false"
+                aria-controls="primaryNav">
+                ☰
+            </button>
+
+            <nav id="primaryNav" class="nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About / Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="section">
+        <div class="container">
+            <h1>Thank you!</h1>
+            <p>Your order request was received. Below are the details you submitted.</p>
+
+            <section class="card">
+                <h2>Submitted information</h2>
+
+                <dl class="summary">
+                    <dt>First Name</dt>
+                    <dd id="outFname"></dd>
+
+                    <dt>Last Name</dt>
+                    <dd id="outLname"></dd>
+
+                    <dt>Email</dt>
+                    <dd id="outEmail"></dd>
+
+                    <dt>Mobile</dt>
+                    <dd id="outMobile"></dd>
+
+                    <dt>Delivery Zone</dt>
+                    <dd id="outZone"></dd>
+
+                    <dt>Order Notes</dt>
+                    <dd id="outNotes"></dd>
+                </dl>
+            </section>
+
+            <div class="hero-actions">
+                <a class="btn" href="products.html">Back to Products</a>
+                <a class="btn btn-dark" href="index.html">Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="small footer-bottom">
+                &copy; <span id="year"></span> Familia Sazón | WDD231 Final Project
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

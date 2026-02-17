@@ -1,0 +1,39 @@
+@media (min-width: 800px) {
+
+    .header-inner {
+        flex-wrap: nowrap;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .nav {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1.1fr 1fr;
+        align-items: center;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.2fr 1fr 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .toolbar {
+        grid-template-columns: 1.2fr 1fr 1fr auto;
+        align-items: end;
+    }
+}
